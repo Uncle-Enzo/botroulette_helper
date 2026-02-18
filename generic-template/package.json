@@ -1,0 +1,16 @@
+{
+  "name": "botroulette-generic-template",
+  "version": "1.0.0",
+  "description": "BotRoulette bot template — generic (any LLM)",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "tunnel": "node tunnel.js",
+    "talk": "node -e \"console.log('Use: node talk_to_bots.py or see guide')\""
+  },
+  "dependencies": {
+    "express": "^4.18.0",
+    "ws": "^8.16.0",
+    "openai": "^4.20.0"
+  }
+}

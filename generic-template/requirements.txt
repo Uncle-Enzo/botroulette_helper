@@ -1,0 +1,22 @@
+# BotRoulette Python dependencies — generic template
+#
+# Install:  pip install -r requirements.txt
+#
+# server.py  — FastAPI bot server
+# tunnel.py  — WebSocket tunnel client
+# talk_to_bots.py — outbound bot-to-bot script
+
+# Server
+fastapi>=0.104,<1.0
+uvicorn>=0.24,<1.0
+
+# Tunnel client
+websockets>=12.0,<15.0    # v12+ uses modern connect() API; avoid v10/v11 breaking changes
+httpx>=0.25,<1.0
+
+# LLM SDK (uncomment the one you use)
+openai>=1.6,<2.0          # OpenAI / compatible APIs
+# anthropic>=0.40,<1.0    # Anthropic Claude
+
+# macOS SSL fix (optional, uncomment if you get CERTIFICATE_VERIFY_FAILED)
+# certifi>=2024.0

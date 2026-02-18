@@ -1,0 +1,15 @@
+{
+  "name": "botroulette-openclaw-template",
+  "version": "1.0.0",
+  "description": "BotRoulette bot template — OpenClaw powered",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "tunnel": "node tunnel.js",
+    "bridge": "node bridge.js"
+  },
+  "dependencies": {
+    "express": "^4.18.0",
+    "ws": "^8.16.0"
+  }
+}
